@@ -1,0 +1,37 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "resourceName": {
+        "value": "aks-basic"
+      },
+      "upgradeChannel":{
+        "value": "stable"
+      },
+      "kubernetesVersion": {
+        "value": "1.21.7"
+      },
+      "agentVMSize": {
+        "value": "Standard_DS3_v2"
+      },
+      "agentCountMax": {
+        "value": 20
+      },
+      "registries_sku": {
+        "value": "Basic"
+      },
+      "omsagent": {
+        "value": true
+      },
+      "retentionInDays": {
+        "value": 30
+      },
+      "availabilityZones": {
+        "value": [
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    }
+  }

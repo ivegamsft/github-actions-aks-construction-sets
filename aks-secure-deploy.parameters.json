@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "resourceName": {
+      "value": "aks-secure"
+    },
+    "upgradeChannel": {
+      "value": "stable"
+    },
+    "agentCountMax": {
+      "value": 20
+    },
+    "custom_vnet": {
+      "value": true
+    },
+    "enable_aad": {
+      "value": true
+    },
+    "AksDisableLocalAccounts": {
+      "value": true
+    },
+    "enableAzureRBAC": {
+      "value": true
+    },
+    "omsagent": {
+      "value": true
+    },
+    "retentionInDays": {
+      "value": 30
+    },
+    "networkPolicy": {
+      "value": "azure"
+    },
+    "azurepolicy": {
+      "value": "audit"
+    },
+    "authorizedIPRanges": {
+      "value": [
+        "47.185.27.252/32"
+      ]
+    },
+    "ingressApplicationGateway": {
+      "value": true
+    },
+    "appGWcount": {
+      "value": 0
+    },
+    "appGWsku": {
+      "value": "WAF_v2"
+    },
+    "appGWmaxCount": {
+      "value": 10
+    },
+    "appgwKVIntegration": {
+      "value": true
+    },
+    "azureKeyvaultSecretsProvider": {
+      "value": true
+    },
+    "createKV": {
+      "value": true
+    }
+  }
+}
